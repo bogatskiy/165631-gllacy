@@ -8,7 +8,7 @@
     <div class="container">
       <header>
         <div class="container">
-          <a class="main-page-link" href="index.html"></a><img src="img/logo." alt="" width="154px" height="64px" />
+          <a class="main-page-link" href="index.html"></a><img src="img/logo.svg" alt="" width="154" height="64" />
           <nav class="main-nav">
             <ul class="main-nav__list">
               <li class="main-nav__item"><a href="#">Каталог</a>
@@ -52,10 +52,14 @@
             <input type="select" name="name" value="" id="sort">
             <label for="price"></label>
             <input type="range" name="name" value="" id="price">
-            <label for="fat"></label>
-            <input type="radio" name="fat" value="" id="fat">
-            <input type="radio" name="fat" value="" id="fat">
-            <input type="radio" name="fat" value="" id="fat">
+            <label for="0">0%</label>
+            <input type="radio" name="fat" value="" id="0">
+            <label for="<10">до 10%</label>
+            <input type="radio" name="fat" value="" id="<10">
+            <label for="<30">до 30%</label>
+            <input type="radio" name="fat" value="" id="<30">
+            <label for=">30">выше 30%</label>
+            <input type="radio" name="fat" value="" id=">30">
           </form>
         </div>
         <div class="products">
@@ -185,7 +189,7 @@
             </ul>
           </section>
           <section class="main-footer__item main-footer__item--made-in">
-            <img class="madein__logo" src="" alt="" width="108px" height="38px" />
+            <img class="madein__logo" src="img/html-logo.svg" alt="" width="108" height="38" />
             <a class="madein__link" href="#">Сделано в HTML Academy © 2016</a>
           </section>
         </footer>
