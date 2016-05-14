@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css" media="screen">
     <link rel="stylesheet" href="css/style_min.css" media="screen">
   </head>
@@ -34,7 +35,10 @@
                 <li class="user-block__item user-block__item--search">
                   <a class="user-block__link user-block__link--search" href="#"></a>
                   <div class="user-block__hvr user-block__hvr--search">
-                    <input class="form-input" type="text" name="name" value="" placeholder="Что ищем?">
+                    <form class="search-form" action="index.html" method="post">
+                      <input class="search-form__input form-input" type="text" name="name" value="" placeholder="Что ищем?">
+                      <button class="search-form__submit" type="submit" name="button"></button>
+                    </form>
                   </div>
                 </li>
                 <li class="user-block__item user-block__item--login">
@@ -112,7 +116,9 @@
                 <img class="catalog__label-img" width="61" height="61" src="img/hit.png" alt="" />
               </div>
             </div>
-            <a class="catalog__text" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <div class="catalog__text">
+              <a class="catalog__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            </div>
           <div class="catalog__overlay">
             <a class="catalog__btn btn" href="#">Быстрый Просмотр</a>
           </div>
@@ -127,9 +133,9 @@
               <img class="catalog__label-img" width="61" height="61" src="img/hit.png" alt="" />
             </div>
           </div>
-          <a class="catalog__text" href="#">
-            Сливочно-кофейное с кусочками шоколада
-          </a>
+          <div class="catalog__text">
+            <a class="catalog__link" href="#">Сливочно-кофейное с кусочками шоколада</a>
+          </div>
           <div class="catalog__overlay">
             <a class="catalog__btn btn" href="#">Быстрый Просмотр</a>
           </div>
@@ -144,9 +150,9 @@
               <img class="catalog__label-img" width="61" height="61" src="img/hit.png" alt="" />
             </div>
           </div>
-          <a class="catalog__text" href="#">
-            Сливочно-клубничное с присыпкой из белого шоколада
-          </a>
+          <div class="catalog__text">
+            <a class="catalog__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          </div>
           <div class="catalog__overlay">
             <a class="catalog__btn btn" href="#">Быстрый Просмотр</a>
           </div>
@@ -161,9 +167,9 @@
               <img class="catalog__label-img" width="61" height="61" src="img/hit.png" alt="" />
             </div>
           </div>
-          <a class="catalog__text" href="#">
-            Сливочное крем-брюле с карамельной подливкой
-          </a>
+          <div class="catalog__text">
+            <a class="catalog__link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+          </div>
           <div class="catalog__overlay">
             <a class="catalog__btn btn" href="#">Быстрый Просмотр</a>
           </div>
@@ -204,7 +210,7 @@
             </p>
             <form class="delivery__form" action="index.html" method="post">
               <div class="delivery__form-content">
-                <input class="delivery__emailfield form-input" type="text" name="name" value="" placeholder="Электронная почта">
+                <input class="form-input delivery__emailfield" type="text" name="name" value="" placeholder="Электронная почта">
                 <input class="delivery__btn btn" type="button" name="name" value="Отправить">
               </div>
             </form>
@@ -214,7 +220,7 @@
     </main>
   </div>
     <section class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123572!2d30.32089461552469!3d59.9387968690486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1463171161302" width="100%" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123572!2d30.32089461552469!3d59.9387968690486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1463171161302" style="border:0; width:100%; height:430px; frameborder:0;" allowfullscreen></iframe>
       <div class="feedback__overlay">
       </div>
       <div class="feedback">
@@ -264,7 +270,7 @@
         <section class="main-footer__item main-footer__item--made-in">
           <div class="madein__link">
             <img class="madein__logo" src="img/html-logo.svg" alt="" width="108" height="38" />
-            Сделано в <a href="#">HTML Academy</a> © 2016
+            Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016
           </div>
         </section>
       </footer>

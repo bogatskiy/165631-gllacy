@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси - Каталог</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css" media="screen">
     <link rel="stylesheet" href="css/style.css" media="screen">
   </head>
@@ -31,7 +31,10 @@
                 <li class="user-block__item user-block__item--search">
                   <a class="user-block__link user-block__link--search" href="#"></a>
                   <div class="user-block__hvr user-block__hvr--search">
-                    <input class="form-input" type="text" name="name" value="" placeholder="Что ищем?">
+                    <form class="search-form" action="index.html" method="post">
+                      <input class="search-form__input form-input" type="text" name="name" value="" placeholder="Что ищем?">
+                      <button class="search-form__submit" type="submit" name="button"></button>
+                    </form>
                   </div>
                 </li>
                 <li class="user-block__item user-block__item--login">
@@ -179,15 +182,15 @@
 
         <div class="catalog">
           <div class="catalog__item catalog__item--1">
-            <div class="catalog__image">
-              <img src="img/bg-products-01.jpg" alt="" />
-              <div class="catalog__price">
-                310<span>/кг</span>
+              <div class="catalog__image">
+                <img src="img/bg-products-01.jpg" alt="" />
+                <div class="catalog__price">
+                  310<span>/кг</span>
+                </div>
               </div>
-            </div>
-            <a class="catalog__text" href="#">
-              Сливочное с апельсиновым джемом и цитрусовой стружкой
-            </a>
+              <div class="catalog__text">
+                <a class="catalog__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              </div>
             <div class="catalog__overlay">
               <a class="catalog__btn btn" href="#">Быстрый Просмотр</a>
             </div>
@@ -199,9 +202,9 @@
                 380<span>/кг</span>
               </div>
             </div>
-            <a class="catalog__text" href="#">
-              Сливочно-кофейное с кусочками шоколада
-            </a>
+            <div class="catalog__text">
+              <a class="catalog__link" href="#">Сливочно-кофейное с кусочками шоколада</a>
+            </div>
             <div class="catalog__overlay">
               <a class="catalog__btn btn" href="#">Быстрый Просмотр</a>
             </div>
@@ -213,9 +216,9 @@
                 355<span>/кг</span>
               </div>
             </div>
-            <a class="catalog__text" href="#">
-              Сливочно-клубничное с присыпкой из белого шоколада
-            </a>
+            <div class="catalog__text">
+              <a class="catalog__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            </div>
             <div class="catalog__overlay">
               <a class="catalog__btn btn" href="#">Быстрый Просмотр</a>
             </div>
@@ -227,9 +230,9 @@
                 415<span>/кг</span>
               </div>
             </div>
-            <a class="catalog__text" href="#">
-              Сливочное крем-брюле с карамельной подливкой
-            </a>
+            <div class="catalog__text">
+              <a class="catalog__link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            </div>
             <div class="catalog__overlay">
               <a class="catalog__btn btn" href="#">Быстрый Просмотр</a>
             </div>
@@ -241,9 +244,9 @@
                 325<span>/кг</span>
               </div>
             </div>
-            <a class="catalog__text" href="#">
-              Сливочное с брусничным джемом
-            </a>
+            <div class="catalog__text">
+              <a class="catalog__link" href="#">Сливочное с брусничным джемом</a>
+            </div>
             <div class="catalog__overlay">
               <a class="catalog__btn btn" href="#">Быстрый Просмотр</a>
             </div>
@@ -255,9 +258,9 @@
                 410<span>/кг</span>
               </div>
             </div>
-            <a class="catalog__text" href="#">
-              Сливочно-черничное с цельными ягодами черники
-            </a>
+            <div class="catalog__text">
+              <a class="catalog__link" href="#">Сливочно-черничное с цельными ягодами черники</a>
+            </div>
             <div class="catalog__overlay">
               <a class="catalog__btn btn" href="#">Быстрый Просмотр</a>
             </div>
@@ -269,9 +272,9 @@
                 375<span>/кг</span>
               </div>
             </div>
-            <a class="catalog__text" href="#">
-              Сливочно-лимонное с карамельной присыпкой
-            </a>
+            <div class="catalog__text">
+              <a class="catalog__link" href="#">Сливочно-лимонное с карамельной присыпкой</a>
+            </div>
             <div class="catalog__overlay">
               <a class="catalog__btn btn" href="#">Быстрый Просмотр</a>
             </div>
@@ -283,9 +286,9 @@
                 320<span>/кг</span>
               </div>
             </div>
-            <a class="catalog__text" href="#">
-              Сливочное с шоколадной стружкой
-            </a>
+            <div class="catalog__text">
+              <a class="catalog__link" href="#">Сливочное с шоколадной стружкой</a>
+            </div>
             <div class="catalog__overlay">
               <a class="catalog__btn btn" href="#">Быстрый Просмотр</a>
             </div>
@@ -297,9 +300,9 @@
                 440<span>/кг</span>
               </div>
             </div>
-            <a class="catalog__text" href="#">
-              Сливочно-ванильное с кусочками шоколада
-            </a>
+            <div class="catalog__text">
+              <a class="catalog__link" href="#">Сливочно-ванильное с кусочками шоколада</a>
+            </div>
             <div class="catalog__overlay">
               <a class="catalog__btn btn" href="#">Быстрый Просмотр</a>
             </div>
@@ -311,9 +314,9 @@
                 435<span>/кг</span>
               </div>
             </div>
-            <a class="catalog__text" href="#">
-              Сливочноe с ментоловым сиропом
-            </a>
+            <div class="catalog__text">
+              <a class="catalog__link" href="#">Сливочноe с ментоловым сиропом</a>
+            </div>
             <div class="catalog__overlay">
               <a class="catalog__btn btn" href="#">Быстрый Просмотр</a>
             </div>
@@ -325,9 +328,9 @@
                 355<span>/кг</span>
               </div>
             </div>
-            <a class="catalog__text" href="#">
-              Сливочное с кусочками черного шоколада
-            </a>
+            <div class="catalog__text">
+              <a class="catalog__link" href="#">Сливочное с кусочками черного шоколада</a>
+            </div>
             <div class="catalog__overlay">
               <a class="catalog__btn btn" href="#">Быстрый Просмотр</a>
             </div>
@@ -339,9 +342,9 @@
                 420<span>/кг</span>
               </div>
             </div>
-            <a class="catalog__text" href="#">
-              Сливочное с мятным сиропом
-            </a>
+            <div class="catalog__text">
+              <a class="catalog__link" href="#">Сливочное с мятным сиропом</a>
+            </div>
             <div class="catalog__overlay">
               <a class="catalog__btn btn" href="#">Быстрый Просмотр</a>
             </div>
@@ -380,7 +383,7 @@
           <section class="main-footer__item main-footer__item--made-in">
             <div class="madein__link">
               <img class="madein__logo" src="img/html-logo.svg" alt="" width="108" height="38" />
-              Сделано в <a href="#">HTML Academy</a> © 2016
+              Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016
             </div>
           </section>
         </footer>
