@@ -231,12 +231,19 @@
       <div class="feedback">
         <div class="feedback__close"></div>
         <div class="feedback__title">Мы обязательно вам ответим!</div>
-          <form class="feedback__form clearfix" action="index.html" method="post">
-            <label for="feedback-name"></label>
-            <input class="form-input feedback__user-name" id="feedback-name" type="text" name="user-name" value="" placeholder="Как вас зовут?" required>
-            <label for="feedback-email"></label>
-            <input class="form-input feedback__user-email" id="feedback-email" type="text" name="user-email" value="" placeholder="Ваша почта для ответа?" required>
-            <textarea class="feedback__text form-textarea" name="name" rows="8" cols="40" placeholder="Напишите что-нибудь..." ></textarea>
+          <form class="feedback__form clearfix" action="index.html" method="post" id="feedback-form">
+            <div class="feedback__row">
+              <input class="form-input feedback__input feedback__user-name" id="feedback-name" type="text" name="user-name" value="" placeholder="Как вас зовут?" required>
+              <label class="feedback__label" for="feedback-name">Как вас зовут?</label>
+            </div>
+            <div class="feedback__row">
+              <input class="form-input feedback__input feedback__user-email" id="feedback-email" type="text" name="user-email" value="" placeholder="Ваша почта для ответа?" required>
+              <label class="feedback__label" for="feedback-email">Ваша почта для ответа?</label>
+            </div>
+            <div class="feedback__row">
+              <textarea class="feedback__text form-textarea" id="textarea" form="feedback-form" name="textarea" rows="8" cols="40" placeholder="Напишите что-нибудь..." required></textarea>
+              <label class="feedback__label" for="textarea">Напишите что-нибудь...</label>
+            </div>
             <input class="input-btn btn" type="submit" name="name" value="Отправить">
           </form>
       </div>

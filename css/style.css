@@ -664,7 +664,7 @@ footer a {
 
 .catalog__price span::after {
     position: absolute;
-    bottom: 9px;
+    bottom: 4px;
     left: -33px;
     display: block;
     width: 31px;
@@ -846,7 +846,7 @@ footer a {
 
 .delivery__form-content {
     position: relative;
-    margin-right: 141px
+    padding-right: 141px
 }
 
 .form-input {
@@ -867,7 +867,7 @@ footer a {
     line-height: 24px;
     position: absolute;
     top: 0;
-    right: -140px;
+    right: 0;
     padding: 10px 19px;
     border-radius: 22px
 }
@@ -916,7 +916,7 @@ footer a {
 .feedback {
     position: fixed;
     z-index: 100;
-    top: 150px;
+    top: 190px;
     left: 50%;
     display: none;
     width: 428px;
@@ -926,11 +926,42 @@ footer a {
     background-color: #f8f7f4
 }
 
+.feedback__row {
+  position: relative;
+  padding-top: 13px;
+}
+
+.feedback__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  font-size: 11px;
+  line-height: 13px;
+  opacity: 0;
+}
+
+
+.feedback__input:valid + .feedback__label,
+.form-textarea:valid + .feedback__label {
+  opacity: 1;
+  transition: all .2s ease;
+}
+
+
+.form-textarea:focus + .feedback__label,
+.feedback__input:focus + .feedback__label {
+  opacity: 1;
+  color: #5b9ddf;
+  transition: all .3s ease;
+}
+
 .feedback input[type=text] {
     width: 62%
 }
 
-.feedback-show,.feedback__overlay-show {
+.feedback-show,
+.feedback__overlay-show {
     display: block;
     animation: bounce .8s
 }
@@ -952,7 +983,9 @@ footer a {
     line-height: 28px
 }
 
-.feedback .form-input,.feedback .form-textarea,.feedback__title {
+.feedback .form-input,
+.feedback .form-textarea,
+.feedback__title {
     margin-bottom: 20px
 }
 
@@ -976,7 +1009,8 @@ footer a {
     margin-bottom: 0
 }
 
-.address-block__tel,.address-block__text b {
+.address-block__tel,
+.address-block__text b {
     font-size: 18px;
     line-height: 24px;
     display: block;
