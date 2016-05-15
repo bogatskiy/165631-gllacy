@@ -5,105 +5,114 @@
     <title>HTML Academy: Глейси - Каталог</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css" media="screen">
-    <link rel="stylesheet" href="css/style_min.css" media="screen">
+    <link rel="stylesheet" href="css/style.min.css" media="screen">
   </head>
   <body>
     <div class="content-wrapper">
       <header class="page-header clearfix">
-        <a href="index.html"><img class="main-logo" src="img/logo.svg" alt="" width="154" height="64" /></a>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--catalog">
-              <a class="main-nav__link active" href="#">Каталог</a>
-              <ul class="main-nav__dropdown-list">
-                <li class="main-nav__dropdown-item main-nav__dropdown-item--new"><a class="main-nav__dropdown-link main-nav__dropdown-link--new" href="#">Новинки</a></li>
-                <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link active" href="catalog.html">Сливочное</a></li>
-                <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Щербеты</a></li>
-                <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Фруктовый лед</a></li>
-                <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Мелорин</a></li>
-              </ul>
-            </li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Доставка и оплата</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">О Компании</a></li>
-          </ul>
-        </nav>
-        <div class="user-block">
-          <ul class="user-block__list">
-            <li class="user-block__item user-block__item--search">
-              <a class="user-block__link user-block__link--search" href="#"></a>
-              <div class="user-block__hvr user-block__hvr--search">
-                <form class="search-form" action="index.html" method="post">
-                  <input class="search-form__input form-input" type="text" name="name" value="" placeholder="Что ищем?">
-                  <button class="search-form__submit" type="submit" name="button"></button>
-                </form>
-              </div>
-            </li>
-            <li class="user-block__item user-block__item--login">
-              <a class="user-block__link user-block__link--login" href="#">Вход</a>
-              <div class="user-block__hvr user-block__hvr--login">
-                <form class="login-form" action="index.html" method="post">
-                  <input class="form-input" type="text" name="name" value="" placeholder="Электронная почта">
-                  <input class="form-input" type="password" name="name" value="" placeholder="Пароль">
-                  <input class="btn input-btn" type="submit" name="name" value="Войти">
-                  <ul class="user-block__hvr-list">
-                    <li class="user-block__hvr-item"><a class="user-block__hvr-link" href="#">Забыли пароль?</a></li>
-                    <li class="user-block__hvr-item"><a  class="user-block__hvr-link" href="#">Новая регистрация</a></li>
-                  </ul>
-                </form>
-              </div>
-            </li>
-            <li class="user-block__item user-block__item--cart user-block__item--cart-full">
-              <a class="user-block__link user-block__link--cart user-block__link--cart-full" href="#">2 товара</a>
-              <div class="user-block__hvr user-block__hvr--cart">
-                <ul class="form-cart__list">
-                  <li class="form-cart__item">
-                    <img class="form-cart__item-img form-cart__item-content" src="img/bg-products-01.jpg" width="33" height="33" alt="" />
-                    <a href="#" class="form-cart__item-item form-cart__item-content">
-                    Пломбир с апельсиновым джемом
-                    </a>
-                    <div class="form-cart__item-quantity form-cart__item-content">
-                      1,5 кг х <span>200 руб.</span>
-                    </div>
-                    <div class="form-cart__item-price form-cart__item-content">
-                      300 руб.
-                    </div>
-                  </li>
-                  <li class="form-cart__item">
-                    <img class="form-cart__item-img form-cart__item-content" src="img/bg-products-03.jpg" width="33" height="33" alt="" />
-                    <a href="#" class="form-cart__item-item form-cart__item-content">
-                    Клубничный пломбир с присыпкой из белого шоколада
-                    </a>
-                    <div class="form-cart__item-quantity form-cart__item-content">
-                      1,5 кг х <span>300 руб.</span>
-                    </div>
-                    <div class="form-cart__item-price form-cart__item-content">
-                      450 руб.
-                    </div>
-                  </li>
+        <div class="clearfix">
+          <a href="index.html"><img class="main-logo" src="img/logo.svg" alt="" width="154" height="64" /></a>
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--catalog">
+                <a class="main-nav__link active" href="#">Каталог</a>
+                <ul class="main-nav__dropdown-list">
+                  <li class="main-nav__dropdown-item main-nav__dropdown-item--new"><a class="main-nav__dropdown-link main-nav__dropdown-link--new" href="#">Новинки</a></li>
+                  <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link active" href="catalog.html">Сливочное</a></li>
+                  <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Щербеты</a></li>
+                  <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Фруктовый лед</a></li>
+                  <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Мелорин</a></li>
                 </ul>
-                <div class="form-cart__result">
-                  Итого: 750 руб.
+              </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Доставка и оплата</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">О Компании</a></li>
+            </ul>
+          </nav>
+          <div class="user-block">
+            <ul class="user-block__list">
+              <li class="user-block__item user-block__item--search">
+                <a class="user-block__link user-block__link--search" href="#"></a>
+                <div class="user-block__hvr user-block__hvr--search">
+                  <form class="search-form" action="index.html" method="post">
+                    <input class="search-form__input form-input" type="text" name="name" value="" placeholder="Что ищем?">
+                    <button class="search-form__submit" type="submit" name="button"></button>
+                  </form>
                 </div>
-                <div class="form-cart__submit">
-                  <input class="form-cart__btn btn" type="button" name="name" value="Оформить заказ">
+              </li>
+              <li class="user-block__item user-block__item--login">
+                <a class="user-block__link user-block__link--login" href="#">Вход</a>
+                <div class="user-block__hvr user-block__hvr--login">
+                  <form class="login-form" action="index.html" method="post">
+                    <input class="form-input" type="text" name="name" value="" placeholder="Электронная почта">
+                    <input class="form-input" type="password" name="name" value="" placeholder="Пароль">
+                    <input class="btn input-btn" type="submit" name="name" value="Войти">
+                    <ul class="user-block__hvr-list">
+                      <li class="user-block__hvr-item"><a class="user-block__hvr-link" href="#">Забыли пароль?</a></li>
+                      <li class="user-block__hvr-item"><a  class="user-block__hvr-link" href="#">Новая регистрация</a></li>
+                    </ul>
+                  </form>
                 </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+              <li class="user-block__item user-block__item--cart user-block__item--cart-full">
+                <a class="user-block__link user-block__link--cart user-block__link--cart-full" href="#">2 товара</a>
+                <div class="user-block__hvr user-block__hvr--cart">
+                  <ul class="form-cart__list">
+                    <li class="form-cart__item">
+                      <img class="form-cart__item-img form-cart__item-content" src="img/bg-products-01.jpg" width="33" height="33" alt="" />
+                      <a href="#" class="form-cart__item-item form-cart__item-content">
+                        Пломбир с апельсиновым джемом
+                      </a>
+                      <div class="form-cart__item-quantity form-cart__item-content">
+                        1,5 кг х <span>200 руб.</span>
+                      </div>
+                      <div class="form-cart__item-price form-cart__item-content">
+                        300 руб.
+                      </div>
+                    </li>
+                    <li class="form-cart__item">
+                      <img class="form-cart__item-img form-cart__item-content" src="img/bg-products-03.jpg" width="33" height="33" alt="" />
+                      <a href="#" class="form-cart__item-item form-cart__item-content">
+                        Клубничный пломбир с присыпкой из белого шоколада
+                      </a>
+                      <div class="form-cart__item-quantity form-cart__item-content">
+                        1,5 кг х <span>300 руб.</span>
+                      </div>
+                      <div class="form-cart__item-price form-cart__item-content">
+                        450 руб.
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="form-cart__result">
+                    Итого: 750 руб.
+                  </div>
+                  <div class="form-cart__submit">
+                    <input class="form-cart__btn btn" type="button" name="name" value="Оформить заказ">
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
         </div>
-        <div class="header-info">
-          <div class="header-info__worktime">С 10 до 20, ежедневно</div>
-          <a class="header-info__tel" href="tel:+78124502525">8 812 450-25-25</a>
+        <div class="clearfix">
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a><span>»</span></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a><span>»</span></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Сливочное</a></li>
+            </ul>
+          </div>
+
+
+
+          <div class="header-info">
+            <div class="header-info__worktime">С 10 до 20, ежедневно</div>
+            <a class="header-info__tel" href="tel:+78124502525">8 812 450-25-25</a>
+          </div>
+
         </div>
       </header>
       <main>
-        <div class="breadcrumbs">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a><span>»</span></li>
-            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a><span>»</span></li>
-            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Сливочное</a></li>
-          </ul>
-        </div>
         <h1 class="page__title">Сливочное мороженое</h1>
         <div class="filters">
           <form class="filter__form" action="index.html" method="post">
@@ -345,8 +354,8 @@
         </div>
         <div class="paginator">
           <ul class="paginator__list">
-            <li class="paginator__item"><a class="paginator__link paginator__arrow paginator__arrow--prew endlist" href="#"></a></li>
-            <li class="paginator__item active"><a class="paginator__link active" href="#">1</a></li>
+            <li class="paginator__item"><span class="paginator__link paginator__link--disable paginator__arrow paginator__arrow--prew" href="#"></span></li>
+            <li class="paginator__item"><span class="paginator__link paginator__link--disable" href="#">1</span></li>
             <li class="paginator__item"><a class="paginator__link" href="#">2</a></li>
             <li class="paginator__item"><a class="paginator__link" href="#">3</a></li>
             <li class="paginator__item"><a class="paginator__link" href="#">4</a></li>

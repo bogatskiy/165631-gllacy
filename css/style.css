@@ -27,6 +27,7 @@ body {
 
 .form-textarea {
     display: inline-block;
+    vertical-align: top;
     box-sizing: border-box;
     width: 100%;
     padding: 11px 14px 0;
@@ -52,6 +53,7 @@ footer a {
 .btn {
     font-weight: 700;
     display: inline-block;
+    vertical-align: top;
     text-align: center;
     text-decoration: none;
     color: #fff;
@@ -108,15 +110,14 @@ footer a {
 }
 
 .main-logo {
-    position: absolute;
-    z-index: 11;
-    top: 9px;
-    left: -6px
+    float: left;
+    margin-top: 9px;
+    margin-left: -6px
 }
 
 .main-nav {
     float: left;
-    margin: 23px 0 0 163px;
+    margin: 23px 0 0 16px;
     padding: 0;
     vertical-align: top
 }
@@ -242,9 +243,9 @@ footer a {
 .user-block__item {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     margin-left: 10px;
-    padding-bottom: 6px;
-    vertical-align: top
+    padding-bottom: 6px
 }
 
 .user-block__item--search {
@@ -284,7 +285,11 @@ footer a {
     background-image: url(../img/hvr-lens.svg)
 }
 
-.user-block__item--cart:hover .user-block__link--cart,.user-block__item--login:hover .user-block__link--login {
+.user-block__item--cart:hover .user-block__link--cart {
+    background-image: url(../img/hvr-cart.svg)
+}
+
+.user-block__item--login:hover .user-block__link--login {
     background-image: url(../img/hvr-login.svg)
 }
 
@@ -455,10 +460,7 @@ footer a {
 }
 
 .header-info {
-    position: absolute;
-    z-index: 1;
-    top: 73px;
-    right: 0;
+    float: right;
     text-align: right
 }
 
@@ -490,7 +492,7 @@ footer a {
     line-height: 60.35px;
     width: 700px;
     margin: 0 auto;
-    padding-top: 332px
+    padding-top: 275px
 }
 
 .slide__btn {
@@ -511,11 +513,11 @@ footer a {
 
 .slider label {
     display: inline-block;
+    vertical-align: top;
     width: 17px;
     height: 17px;
     margin-right: 8px;
     cursor: pointer;
-    vertical-align: top;
     border: 2px solid #fff;
     border-radius: 50%
 }
@@ -559,11 +561,13 @@ footer a {
 .banners__item {
     font-weight: 700;
     position: relative;
-    min-height: 169px;
-    padding-bottom: 60px;
+    min-height: 229px;
+    padding-bottom: 22px;
+    box-sizing: border-box;
     color: #fff;
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
+    background-position: center
 }
 
 .banners__item-left {
@@ -583,21 +587,21 @@ footer a {
 .banners__title {
     font-size: 35px;
     line-height: 41px;
-    margin: 0 0 14px
+    margin: 0
 }
 
 .banners__text {
+    min-height: 78px;
+    padding: 13px 0;
     font-size: 18px;
-    font-weight: 22px;
+    line-height: 22px;
     display: block
 }
 
 .banners_btn {
+    float: right;
     font-size: 18px;
     line-height: 24px;
-    position: absolute;
-    right: 23px;
-    bottom: 22px;
     padding: 11px 22px;
     border-radius: 23px
 }
@@ -609,11 +613,11 @@ footer a {
 .catalog__item {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     width: 23.35%;
     margin-right: 2.2%;
     margin-bottom: 30px;
-    text-align: center;
-    vertical-align: top
+    text-align: center
 }
 
 .catalog__item:nth-child(4n) {
@@ -622,7 +626,8 @@ footer a {
 
 .catalog__image {
     position: relative;
-    min-height: 200px
+    min-height: 200px;
+    margin-bottom: 4px
 }
 
 .catalog__image img {
@@ -653,6 +658,7 @@ footer a {
     font-size: 30px;
     position: relative;
     display: inline-block;
+    vertical-align: top;
     margin-left: 36px
 }
 
@@ -678,7 +684,7 @@ footer a {
 .catalog__link {
     font-size: 16px;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 16px;
     display: inline;
     text-decoration: none;
     color: #fff;
@@ -718,12 +724,8 @@ footer a {
     border: none
 }
 
-.catalog__item .catalog__link:hover {
-    color: #ffbc9e;
-    border-bottom: 1px solid rgba(255,188,158,.3)
-}
-
 .seo {
+    min-height: 282px;
     margin-bottom: 40px;
     padding-top: 24px;
     padding-left: 19px;
@@ -806,15 +808,17 @@ footer a {
 
 .delivery {
     overflow: hidden;
-    height: 220px;
+    min-height: 220px;
     background-image: repeating-linear-gradient(-45deg,#f8f7f4,#f8f7f4 5px,#94ceff 5px,#94ceff 10px,#f8f7f4 10px,#f8f7f4 15px,#fe9e90 15px,#fe9e90 20px)
 }
 
 .delivery_container {
     position: relative;
-    min-height: 110px;
+    box-sizing: content-box;
+    min-height: 154px;
     padding-right: 20px;
-    padding-bottom: 100px;
+    padding-top: 28px;
+    padding-bottom: 28px;
     padding-left: 22px;
     border: 5px solid transparent;
     border-radius: 15px;
@@ -823,7 +827,6 @@ footer a {
 }
 
 .delivery__form {
-    position: absolute;
     bottom: 35px;
     width: 100%
 }
@@ -833,19 +836,22 @@ footer a {
 }
 
 .delivery__text {
+    min-height: 93px;
     font-size: 16px;
     line-height: 22px;
-    margin: 28px 0 0;
+    margin: 0;
+    margin-bottom: 10px;
     color: #5a5a5a
 }
 
 .delivery__form-content {
     position: relative;
-    margin-right: 183px
+    margin-right: 141px
 }
 
 .form-input {
     display: inline-block;
+    vertical-align: top;
     box-sizing: border-box;
     width: 100%;
     height: 44px;
@@ -1033,6 +1039,7 @@ footer a {
 
 .social__item {
     display: inline-block;
+    vertical-align: top;
     margin-right: 11px
 }
 
@@ -1079,11 +1086,11 @@ footer a {
 .menu__list {
     font-size: 0;
     display: inline-block;
+    vertical-align: top;
     margin: 0;
     padding: 0;
     list-style: none;
-    text-align: left;
-    vertical-align: top
+    text-align: left
 }
 
 .menu__list--left {
@@ -1125,6 +1132,7 @@ footer a {
     line-height: 18px;
     position: relative;
     display: inline-block;
+    vertical-align: top;
     padding-top: 43px;
     text-decoration: none;
     color: #fff
@@ -1147,8 +1155,8 @@ footer a {
 }
 
 .breadcrumbs {
-    margin-bottom: -2px;
-    padding-top: 38px
+    padding-top: 26px;
+    float: left
 }
 
 .breadcrumbs__list {
@@ -1160,9 +1168,9 @@ footer a {
 
 .breadcrumbs__item {
     display: inline-block;
+    vertical-align: top;
     margin-right: 6px;
-    padding: 0;
-    vertical-align: top
+    padding: 0
 }
 
 .breadcrumbs__link {
@@ -1178,6 +1186,7 @@ footer a {
     font-size: 14px;
     line-height: 16px;
     display: inline-block;
+    vertical-align: top;
     margin-left: 8px;
     color: #fff
 }
@@ -1185,8 +1194,8 @@ footer a {
 .page__title {
     font-size: 35px;
     font-weight: 700;
-    line-height: 41px;
-    margin: 0 0 24px;
+    line-height: 36px;
+    margin: 0 0 26px;
     padding: 0;
     color: #fff
 }
@@ -1194,15 +1203,15 @@ footer a {
 .filters {
     font-size: 0;
     line-height: 0;
-    margin-bottom: 21px;
+    margin-bottom: 24px;
     color: #fff
 }
 
 .filter__item {
     display: inline-block;
+    vertical-align: top;
     margin-right: 14px;
-    margin-bottom: 14px;
-    vertical-align: top
+    margin-bottom: 14px
 }
 
 .filter__title {
@@ -1257,7 +1266,8 @@ footer a {
 .filter__title--range label,.filter__title--range-title {
     font-size: 14px;
     line-height: 16px;
-    display: inline-block
+    display: inline-block;
+    vertical-align: top
 }
 
 .filter__title--range input[type=text] {
@@ -1327,10 +1337,16 @@ footer a {
     line-height: 18px;
     position: relative;
     display: inline-block;
-    margin-right: 19px;
-    padding: 9px 0 9px 31px;
-    cursor: pointer;
-    vertical-align: top
+    vertical-align: top;
+    margin: 0;
+    margin-right: 20px;
+    padding: 9px 0;
+    padding-left: 30px;
+    cursor: pointer
+}
+
+.filter__content--fillers label {
+    margin-right: 25px
 }
 
 .filter__content label:last-of-type {
@@ -1425,7 +1441,8 @@ footer a {
 
 .filter__item--btn {
     width: 144px;
-    margin-top: 25px
+    margin-top: 25px;
+    margin-left: 4px
 }
 
 .filter__btn {
@@ -1465,17 +1482,26 @@ footer a {
 
 .paginator__list {
     display: inline-block;
+    vertical-align: top;
     margin: 0;
-    padding: 0 23px 30px;
-    list-style: none
+    padding: 0;
+    padding-bottom: 36px;
+    margin-right: -7px;
+    list-style: none;
+    font-size: 0
 }
 
 .paginator__item {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     padding: 0;
     text-align: center;
-    vertical-align: top
+    margin-right: 4px
+}
+
+.paginator__item:last-of-type {
+    margin-right: 0
 }
 
 .paginator__arrow {
@@ -1484,26 +1510,19 @@ footer a {
 }
 
 .paginator__arrow--prew {
-    background-position: 3px -23px
+    background-position: 3px -48px
+}
+
+.paginator__arrow--prew:active {
+    background-position: 3px -72px
 }
 
 .paginator__arrow--next {
-    background-position: 6px 1px
+    background-position: 5px 0
 }
 
-.paginator__arrow.endlist {
-    cursor: default;
-    opacity: .4
-}
-
-.paginator__item:hover .paginator__link {
-    color: #fff;
-    background-color: rgba(255,255,255,.2)
-}
-
-.paginator__item:active .paginator__link {
-    color: #000;
-    background-color: #fff
+.paginator__arrow--next:active {
+    background-position: 5px -23px
 }
 
 .paginator__link {
@@ -1515,4 +1534,30 @@ footer a {
     text-decoration: none;
     color: #fff;
     border-radius: 50%
+}
+
+.paginator__link:hover {
+    color: #fff;
+    background-color: rgba(255,255,255,.2)
+}
+
+.paginator__link:active {
+    color: #000;
+    background-color: #fff
+}
+
+.paginator__link--disable {
+    cursor: default;
+    opacity: .4
+}
+
+.paginator__link--disable:hover {
+    background-color: transparent;
+    background-positio: 3px -48px
+}
+
+.paginator__link--disable:active {
+    color: #fff;
+    background-color: transparent;
+    background-position: 3px -48px
 }
