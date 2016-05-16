@@ -873,31 +873,37 @@ footer a {
 }
 
 .map {
-    position: relative;
-    min-width: 900px;
-    max-width: 1200px;
     height: 430px;
     margin: 0 auto;
     background-color: #dfe0cf;
     background-image: url(../img/bg-map.jpg);
     background-repeat: no-repeat;
-    background-position: center
+    background-size: cover;
+    background-position: center;
 }
 
 @keyframes bounce {
     0% {
+        -webkit-transform: translateY(-2000px);
+        -ms-transform: translateY(-2000px);
         transform: translateY(-2000px)
     }
 
     70% {
+        -webkit-transform: translateY(30px);
+        -ms-transform: translateY(30px);
         transform: translateY(30px)
     }
 
     90% {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
         transform: translateY(-10px)
     }
 
     to {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
         transform: translateY(0)
     }
 }
@@ -993,12 +999,16 @@ footer a {
     float: right
 }
 
+.address-block-wrap {
+    position: relative;
+}
+
 .address-block {
     font-size: 14px;
     line-height: 20px;
     position: absolute;
-    right: 26px;
-    bottom: 64px;
+    right: 0;
+    bottom: -366px;
     padding: 30px 25px;
     color: #323232;
     border-radius: 14px;
@@ -1297,6 +1307,12 @@ footer a {
     vertical-align: top
 }
 
+.filter__title--range span {
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 5px;
+}
+
 .filter__title--range label,.filter__title--range-title {
     font-size: 14px;
     line-height: 16px;
@@ -1575,7 +1591,8 @@ footer a {
     background-color: rgba(255,255,255,.2)
 }
 
-.paginator__link:active {
+.paginator__link:active,
+.paginator__link.active {
     color: #000;
     background-color: #fff
 }
